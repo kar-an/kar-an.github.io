@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadi Dosh Checker</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDl4LZfwvTjxOUVPd3wZP_UjsDXsjxoqp0&libraries=places&callback=initMap"></script>
+
+	<script src="script.js" defer type="text/javascript"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<center>
+		<h1>Check Nadi Dosh</h1>
+	</center>
+	<p id="result"></p>
+	<form method="post" onsubmit="return check()" id="detailsForm">
+		<div id="wrapper">
+			<div id="boyDiv">
+				<h3>Boy's Detail</h3>
+				<label for="birthday">Date Of Birth:</label><br>
+				<input type="date" id="boyDOB" name="birthday">
+				<br>
+				<label for="appt">Select a time:</label>
+				<br>
+				<input type="time" id="boyBTime">
+				<br>
+				<input id="boySearchTextField" type="text" size="50" placeholder="Enter a location" autocomplete="on" runat="server" />  
+			</div>
+			<div id="girlDiv">
+				<h3>Girl's Detail</h3>
+				<label for="birthday">Date Of Birth:</label><br>
+				<input type="date" id="girlDOB" name="birthday">
+				<br>
+				<label for="appt">Select a time:</label>
+				<br>
+				<input type="time" id="girlBTime">
+				<br>
+				<input id="girlSearchTextField" type="text" size="50" placeholder="Enter a location" autocomplete="on" runat="server" />  
+			</div>
+		</div>
+		<center>
+			<button id="resetButton" onclick="resetFormData()">Reset Form</button>
+			<input type="submit" value="Check Nadi Dosh" > 
+		</center>
+	</form>
+
+</body>
+</html>
