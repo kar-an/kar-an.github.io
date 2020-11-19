@@ -1,0 +1,62 @@
+#wrapper {
+  display: flex;
+}
+
+#boyDiv {
+  flex: 0 0 50%;
+  padding: 8px;
+}
+
+#girlDiv {
+  flex: 1;
+  padding: 8px;
+}
+
+#resetButton {
+  margin-top: 32px;
+  margin-right: 32px;
+  padding: 8px;
+}
+
+input[type="date"] {
+  margin: 8px;
+  padding: 8px;
+}
+
+input[type="time"] {
+  margin: 8px;
+  padding: 8px;
+}
+
+input[type="text"] {
+  margin: 8px;
+  padding: 8px;
+}
+
+input[type="submit"] {
+  margin-top: 32px;
+  padding: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  #wrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: auto;
+  }
+
+  #boyDiv {
+    float: left;
+  }
+
+  #girlDiv {
+    float: left;
+    clear: left;
+  }
+
+  input[type="text"] {
+    max-width: 230px;
+  }
+}
