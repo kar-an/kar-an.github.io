@@ -145,6 +145,7 @@ function nadi_check() {
 }
 
 function resetFormData() {
+    document.getElementById("result").innerHTML = "";
     document.getElementById("detailsForm").reset();
 }
 
